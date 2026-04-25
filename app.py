@@ -309,7 +309,7 @@ def color_occ(val):
     elif pct > 90: return "color:#ffaa00;font-weight:700"
     return "color:#00ff88"
 
-st.dataframe(df.style.applymap(color_wait, subset=["Wait (min)"]).applymap(color_occ, subset=["Occupancy"]),
+st.dataframe(df.style.map(color_wait, subset=["Wait (min)"]).map(color_occ, subset=["Occupancy"]),
              use_container_width=True, hide_index=True)
 
 # ─── Performance Charts ───────────────────────────────────────────────────────
