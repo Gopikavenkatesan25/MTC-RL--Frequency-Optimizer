@@ -6,8 +6,8 @@ import time
 
 # ─── Page Config ──────────────────────────────────────────────────────────────
 st.set_page_config(
-    page_title="MTC Chennai RL Optimizer",
-    page_icon="🚌",
+    page_title="FluxBus — MTC Chennai",
+    page_icon="logo.png",
     layout="wide",
     initial_sidebar_state="expanded"
 )
