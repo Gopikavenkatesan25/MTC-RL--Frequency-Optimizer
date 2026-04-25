@@ -7,7 +7,7 @@ import time
 # ─── Page Config ──────────────────────────────────────────────────────────────
 st.set_page_config(
     page_title="FluxBus — MTC Chennai",
-    page_icon="logo.png",
+    page_icon="https://raw.githubusercontent.com/Gopikavenkatesan25/MTC-RL--Frequency-Optimizer/main/logo.png",
     layout="wide",
     initial_sidebar_state="expanded"
 )
