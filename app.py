@@ -7,7 +7,7 @@ import time
 # ─── Page Config ──────────────────────────────────────────────────────────────
 st.set_page_config(
     page_title="FluxBus — MTC Chennai",
-    page_icon="https://raw.githubusercontent.com/Gopikavenkatesan25/MTC-RL--Frequency-Optimizer/main/logo.png",
+    page_icon="🚌",
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -207,7 +207,8 @@ def reset_sim():
 
 # ─── Sidebar ──────────────────────────────────────────────────────────────────
 with st.sidebar:
-    st.markdown("## 🚌 MTC RL Control Panel")
+    st.image("https://raw.githubusercontent.com/Gopikavenkatesan25/MTC-RL--Frequency-Optimizer/main/logo.png", width=150)
+    st.markdown("## FluxBus Control Panel")
     st.markdown("---")
 
     mode = st.radio("**Simulation Mode**", ["static", "rl"],
@@ -309,7 +310,7 @@ def color_occ(val):
     elif pct > 90: return "color:#ffaa00;font-weight:700"
     return "color:#00ff88"
 
-st.dataframe(df.style.map(color_wait, subset=["Wait (min)"]).map(color_occ, subset=["Occupancy"]),
+st.dataframe(df.style.applymap(color_wait, subset=["Wait (min)"]).applymap(color_occ, subset=["Occupancy"]),
              use_container_width=True, hide_index=True)
 
 # ─── Performance Charts ───────────────────────────────────────────────────────
