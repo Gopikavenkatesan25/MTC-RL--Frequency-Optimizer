@@ -68,7 +68,7 @@ with st.sidebar:
 # ─── Header ───────────────────────────────────────────────────────────────────
 st.markdown(f"""
 <div class="title-header" style="display:flex; align-items:center; gap:1.2rem;">
-    <img src="data:image/jpeg;base64,{LOGO_B64}" width="70" style="border-radius:10px; flex-shrink:0;">
+    <img src="data:image/png;base64,{LOGO_B64}" width="70" style="border-radius:10px; flex-shrink:0;">
     <div>
         <h1 style="margin:0; color:#00d4ff; font-size:1.8rem;">FluxBus — Adaptive Bus Frequency Optimizer</h1>
         <p style="margin:0.3rem 0 0; color:#8892b0; font-size:0.9rem;">
