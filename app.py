@@ -18,7 +18,13 @@ if not st.session_state.splash_done:
     splash.empty()
     st.rerun()
 
-
+ROUTES = [
+    {"id": 1, "name": "Koyambedu → Tambaram", "is_peripheral": False, "base_demand": 120},
+    {"id": 2, "name": "Avadi → Parrys", "is_peripheral": False, "base_demand": 150},
+    {"id": 3, "name": "Tambaram → Chengalpattu", "is_peripheral": True, "base_demand": 80},
+    {"id": 4, "name": "Redhills → Broadway", "is_peripheral": True, "base_demand": 90},
+    {"id": 5, "name": "Velachery → T Nagar", "is_peripheral": False, "base_demand": 130},
+]
 
 # ─── Sidebar ──────────────────────────────────────────────────────────────────
 with st.sidebar:
